@@ -7,6 +7,6 @@ import org.springframework.stereotype.Service;
 public class UserMessageHystrix implements UserMessageFeign {
     @Override
     public String getUserMessage() {
-        return "断路器熔断";
+        return "断路器熔断1";
     }
 }

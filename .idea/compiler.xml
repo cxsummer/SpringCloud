@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-config-server" />
+        <module name="eureka-server" />
+        <module name="eureka-turbine" />
+        <module name="eureka-zuul" />
+        <module name="points-action" />
+        <module name="points-service" />
+        <module name="user-action" />
+        <module name="user-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-config-server" options="-parameters" />
+      <module name="eureka-points" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="eureka-turbine" options="-parameters" />
+      <module name="eureka-user" options="-parameters" />
+      <module name="eureka-zuul" options="-parameters" />
+      <module name="points-action" options="-parameters" />
+      <module name="points-service" options="-parameters" />
+      <module name="springcloud" options="" />
+      <module name="user-action" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  management:
+    security:
+      enabled: false #是否开启actuator安全认证
+
+feign:
+  hystrix:
+    enabled: true #开启feign的断路器
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,hystrix.stream,bus-refresh #SpringBoot 2.0 默认是关闭了自带的一些接口 这里需要开放一些端口，"*"暴漏所有
+
+
+
+

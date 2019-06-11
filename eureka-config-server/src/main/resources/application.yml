@@ -1,0 +1,25 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: eureka-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/cxsummer/SpringCloudConfig.git
+          searchPaths: respo
+          username:
+          password:
+      label: master
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  client:
+    register-with-eureka: true     #false表示不向注册中心注册自己。
+    fetch-registry: true          #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/

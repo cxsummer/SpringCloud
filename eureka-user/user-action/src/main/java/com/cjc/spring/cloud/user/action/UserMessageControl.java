@@ -36,7 +36,6 @@ public class UserMessageControl {
 
     @RequestMapping("/getConfig")
     public String getConfig(){
-
         return foo+"--"+userPoints.getPoints();
     }
 
